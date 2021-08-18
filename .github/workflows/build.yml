@@ -20,5 +20,8 @@ jobs:
           java-version: 8
           distribution: 'zulu'
 
-      - name: Unit Test
+      - name: Build project
         run: ./gradlew
+
+      - name : run tests
+        run  : gradle test

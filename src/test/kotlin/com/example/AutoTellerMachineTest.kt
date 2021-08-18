@@ -9,7 +9,7 @@ class AutoTellerMachineTest: StringSpec({
         val fakePrinter = FakePrinter()
         val fakeBankingService = FakeBankingService(true)
         AutoTellerMachine(fakePrinter, fakeBankingService).withdraw(100)
-        fakePrinter.message shouldBe "100 withdrawn successfully"
+        fakePrinter.message shouldBe "200 withdrawn successfully"
     }
 
     "should call banking service " {

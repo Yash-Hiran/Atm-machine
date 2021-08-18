@@ -8,6 +8,5 @@ class AutoTellerMachine(val printer : Printer, val bankingService: BankingServic
         }catch (exception : Exception){
             printer.print("error withdrawing amount")
         }
-
     }
 }
