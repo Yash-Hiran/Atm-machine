@@ -25,5 +25,4 @@ class AutoTellerMachineTest: StringSpec({
         AutoTellerMachine(fakePrinter, fakeBankingService).withdraw(100)
         fakePrinter.message shouldBe "error withdrawing amount"
     }
-
 })
